@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+/* ---------------- HEADER ----------------- */
+
+header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 3px solid #555;
+}
+
+header a {
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-mobile .menu-button li {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.left {
+  display: flex;
+  gap: 10px;
+}
+
+.left .nav-left {
+  display: none;
+}
+
+.left .logo {
+  display: flex;
+  align-items: center;
+}
+
+.right .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.right .nav-right a {
+  margin: 0 10px;
+}
+
+.right .nav-right a:last-child {
+  color: #000;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+.right .nav-right a:last-child i{
+  padding: 0 5px;
+
+}
+
+/* ---------------- HOME ----------------- */
+
+section {
+  padding: 0 25px;
+}
+
+section#home.active {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section#home {
+  display: none;
+} 
+
+section#home {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  padding: 25px 0;
+  background-color: transparent;
+  height: max-content;
+  transition: background .8s;
+}
+
+.navigation a {
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+section#home .text-box {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  
+}
+
+section#home .text-box .title h2 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+section#home .text-box .main-info span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+section#home .text-box .sub-info span {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+section#home .text-box .button-buy button#comprar {
+  width: 180px;
+  padding: 5px 12px;
+  background-color: lime;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+section#home .text-box .button-buy button#comprar a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+section#home .img-box img {
+  max-width: 400px;
+}
+
+/* ---------------- MODO ON ----------------- */
+
+section#mode-on.active {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section#mode-on{
+  display: none;
+} 
+
+section#mode-on {
+  background-color: green;
+  color: #fff;
+  position: absolute;
+}
+
+section#mode-on .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section#mode-on .text-box .title h2 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+section#mode-on .text-box .main-info {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+section#mode-on .text-box .main-info ul li {
+  list-style: disc;
+  margin-left: 25px;
+}
+
+section#mode-on .text-box .sub-info {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+section#mode-on .text-box .button-buy button#comprar {
+  width: 180px;
+  padding: 5px 12px;
+  background-color: orange;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+section#mode-on .text-box .button-buy button#comprar a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+section#mode-on .img-box img {
+  max-width: 400px;
+}
+
+/* ---------------- MODO OFF ----------------- */
+
+section#mode-off.active {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section#mode-off {
+  display: none;
+} 
+
+section#mode-off {
+  background-color: orange;
+  color: #fff;
+  position: absolute;
+}
+
+section#mode-off .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section#mode-off .text-box .title h2 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+section#mode-off .text-box .main-info {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+section#mode-off .text-box .main-info ul li {
+  list-style: disc;
+  margin-left: 25px;
+}
+
+section#mode-off .text-box .sub-info {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+section#mode-off .text-box .button-buy button#comprar {
+  width: 180px;
+  padding: 5px 12px;
+  background-color: green;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+section#mode-off .text-box .button-buy button#comprar a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+section#mode-off .img-box img {
+  max-width: 400px;
+}
