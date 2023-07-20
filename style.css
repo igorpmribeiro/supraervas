@@ -11,7 +11,6 @@
 body {
   position: relative;
 }
-
 /* ---------------- HEADER ----------------- */
 
 header {
@@ -179,9 +178,9 @@ section#home .text-box .sub-info span {
 }
 
 section#home .text-box .button-buy button#comprar {
-  width: 180px;
-  padding: 5px 12px;
-  background-color: lime;
+  width: 200px;
+  padding: 12px 0;
+  background-color: limegreen;
   border: none;
   border-radius: 20px;
   font-size: 1.5rem;
@@ -235,8 +234,8 @@ section#mode-on .text-box .sub-info {
 }
 
 section#mode-on .text-box .button-buy button#comprar {
-  width: 180px;
-  padding: 5px 12px;
+  width: 200px;
+  padding: 12px 0;
   background-color: orange;
   border: none;
   border-radius: 20px;
@@ -291,9 +290,9 @@ section#mode-off .text-box .sub-info {
 }
 
 section#mode-off .text-box .button-buy button#comprar {
-  width: 180px;
-  padding: 5px 12px;
-  background-color: green;
+  width: 200px;
+  padding: 12px 0;
+  background-color: limegreen;
   border: none;
   border-radius: 20px;
   font-size: 1.5rem;
@@ -327,6 +326,16 @@ section#mode-off .img-box img {
   .left .nav-left a {
     color: #fff;
   }
+  header .search-form form {
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 0 25px 0;
+  }
+
+  header .search-form form input:first-child {
+    width: 50%;
+  }
 
   /* SECTION */
   section {
@@ -335,9 +344,7 @@ section#mode-off .img-box img {
   }
   .container-menu {
     display: flex;
-    justify-content: start;
-    max-width: 1000px;
-    margin: 0 auto;
+    justify-content: center;
   }
   .container-content {
     display: flex;
@@ -350,14 +357,18 @@ section#mode-off .img-box img {
     width: 30%;
   }
 
-  header .search-form form {
-    justify-content: center;
-    width: 75%;
-    margin: 0 auto;
-    padding: 10px 0 25px 0;
+  .navigation {
+    width: 50%;
+    justify-content: space-evenly;
   }
 
-  header .search-form form input:first-child {
-    width: 50%;
+  .navigation a {
+    font-size: 1.3rem;
+  }
+  .main-info span {
+    margin-bottom: 5px;
+    }
+  .main-info ul li {
+    margin: 8px;
   }
 }
