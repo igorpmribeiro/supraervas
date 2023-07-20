@@ -61,6 +61,9 @@ header a {
   display: flex;
   align-items: center;
 }
+.left .logo img {
+  max-width: 150px;
+}
 .right .nav-right {
   display: flex;
   align-items: center;
@@ -321,7 +324,7 @@ section#mode-off .img-box img {
 @media (min-width: 1000px) {
   header {
     width: 100%;
-    padding: 50px 30px 30px 0;
+    padding: 10px 30px 10px 0;
   }
   .menu-button {
     display: none;
@@ -333,6 +336,7 @@ section#mode-off .img-box img {
   .left .nav-left {
     display: flex;
     gap: 30px;
+    align-items: center;
   }
   .left .nav-left a {
     color: #fff;
