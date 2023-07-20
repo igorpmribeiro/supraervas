@@ -234,7 +234,7 @@ section#home .text-box .button-buy button#comprar a {
 }
 
 section#home .img-box img {
-  max-width: 400px;
+  max-width: 360px;
 }
 
 /* ---------------- MODO ON ----------------- */
@@ -290,7 +290,7 @@ section#mode-on .text-box .button-buy button#comprar a {
 }
 
 section#mode-on .img-box img {
-  max-width: 400px;
+  max-width: 360px;
 }
 
 /* ---------------- MODO OFF ----------------- */
@@ -346,7 +346,7 @@ section#mode-off .text-box .button-buy button#comprar a {
 }
 
 section#mode-off .img-box img {
-  max-width: 400px;
+  max-width: 360px;
 }
 
 @media (min-width: 1000px) {
