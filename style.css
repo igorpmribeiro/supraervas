@@ -413,4 +413,8 @@ section#mode-off .img-box img {
   .main-info ul li {
     margin: 8px;
   }
+
+  .menu-content {
+    display: none;
+  }
 }
