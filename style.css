@@ -11,6 +11,20 @@
 body {
   position: relative;
 }
+.title h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.main-info {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.sub-info {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
 /* ---------------- HEADER ----------------- */
 
 header {
@@ -204,21 +218,6 @@ section#home .text-box {
   gap: 50px;
 }
 
-section#home .text-box .title h2 {
-  font-weight: 400;
-  font-size: 1.125rem;
-}
-
-section#home .text-box .main-info span {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-section#home .text-box .sub-info span {
-  font-weight: 400;
-  font-size: 1.125rem;
-}
-
 section#home .text-box .button-buy button#comprar {
   width: 200px;
   padding: 12px 0;
@@ -255,24 +254,9 @@ section#mode-on .text-box {
   gap: 30px;
 }
 
-section#mode-on .text-box .title h2 {
-  font-weight: 400;
-  font-size: 1.125rem;
-}
-
-section#mode-on .text-box .main-info {
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-
 section#mode-on .text-box .main-info ul li {
   list-style: disc;
   margin-left: 25px;
-}
-
-section#mode-on .text-box .sub-info {
-  font-weight: 400;
-  font-size: 1.125rem;
 }
 
 section#mode-on .text-box .button-buy button#comprar {
@@ -311,24 +295,9 @@ section#mode-off .text-box {
   gap: 30px;
 }
 
-section#mode-off .text-box .title h2 {
-  font-weight: 400;
-  font-size: 1.125rem;
-}
-
-section#mode-off .text-box .main-info {
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-
 section#mode-off .text-box .main-info ul li {
   list-style: disc;
   margin-left: 25px;
-}
-
-section#mode-off .text-box .sub-info {
-  font-weight: 400;
-  font-size: 1.125rem;
 }
 
 section#mode-off .text-box .button-buy button#comprar {
@@ -413,8 +382,18 @@ section#mode-off .img-box img {
   .main-info ul li {
     margin: 8px;
   }
-
   .menu-content {
     display: none;
+  }
+  .title h2 {
+    font-size: 1.2rem;
+  }
+
+  .main-info {
+    font-size: 1.8rem;
+  }
+
+  .sub-info {
+    font-size: 1.2rem;
   }
 }
