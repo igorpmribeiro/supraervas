@@ -20,27 +20,26 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 10px 20px 0;
   border-bottom: 3px solid #555;
+  position: relative;
 }
 
 header a {
   color: #fff;
   cursor: pointer;
 }
-
 .menu-mobile .menu-button li {
   width: 20px;
   height: 2px;
   background-color: #fff;
   margin: 5px 0;
 }
-
 .left {
   display: flex;
   gap: 10px;
+  padding: 0 10px;
 }
-
 .left .nav-left {
   display: none;
 }
@@ -49,16 +48,13 @@ header a {
   display: flex;
   align-items: center;
 }
-
 .right .nav-right {
   display: flex;
   align-items: center;
 }
-
 .right .nav-right a {
   margin: 0 10px;
 }
-
 .right .nav-right a:last-child {
   color: #000;
   background-color: #fff;
@@ -67,19 +63,66 @@ header a {
   width: 100px;
   text-align: center;
 }
-
-.right .nav-right a:last-child i{
+.right .nav-right a:last-child i {
   padding: 0 5px;
-
 }
 
-/* ---------------- HOME ----------------- */
+header .search-form {
+  position: absolute;
+  top: -50px;
+  opacity: 0; /* height of header + search bar*/
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  transition: opacity 0.3s ease-in-out;
+}
 
+header .search-form.active {
+  top: 85px;
+  opacity: 1;
+  border-bottom: 3px solid rgba(245, 245, 245, 0.5);
+  transition: opacity 0.3s ease-in-out;
+}
+
+header .search-form form {
+  display: flex;
+  gap: 22px;
+}
+header .search-form form input {
+  padding: 10px 12px;
+  border-radius: 20px;
+  border: none;
+}
+/* ---------------- HOME ----------------- */
+.navigation a::after {
+  content: "";
+  height: 0;
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  width: 0;
+  margin-top: 3px;
+  transition: all 0.5s ease-in;
+}
+
+.navigation a.selected::after {
+  height: 3px;
+  width: 100%;
+  transition: all 0.5s ease-in;
+}
 section {
   padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
 }
 
-section#home.active {
+.container-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -87,7 +130,7 @@ section#home.active {
 
 section#home {
   display: none;
-} 
+}
 
 section#home {
   background-color: #000;
@@ -101,7 +144,7 @@ section#home {
   padding: 25px 0;
   background-color: transparent;
   height: max-content;
-  transition: background .8s;
+  transition: background 0.8s;
 }
 
 .navigation a {
@@ -110,6 +153,7 @@ section#home {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
+  position: relative;
 }
 
 section#home .text-box {
@@ -117,7 +161,6 @@ section#home .text-box {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  
 }
 
 section#home .text-box .title h2 {
@@ -155,15 +198,9 @@ section#home .img-box img {
 
 /* ---------------- MODO ON ----------------- */
 
-section#mode-on.active {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-section#mode-on{
+section#mode-on {
   display: none;
-} 
+}
 
 section#mode-on {
   background-color: green;
@@ -217,15 +254,9 @@ section#mode-on .img-box img {
 
 /* ---------------- MODO OFF ----------------- */
 
-section#mode-off.active {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
 section#mode-off {
   display: none;
-} 
+}
 
 section#mode-off {
   background-color: orange;
@@ -275,4 +306,58 @@ section#mode-off .text-box .button-buy button#comprar a {
 
 section#mode-off .img-box img {
   max-width: 400px;
+}
+
+@media (min-width: 1000px) {
+  header {
+    width: 100%;
+    padding: 50px 30px 30px 0;
+  }
+  .menu-button {
+    display: none;
+  }
+  .left {
+    display: flex;
+    gap: 50px;
+  }
+  .left .nav-left {
+    display: flex;
+    gap: 30px;
+  }
+  .left .nav-left a {
+    color: #fff;
+  }
+
+  /* SECTION */
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+  .container-menu {
+    display: flex;
+    justify-content: start;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .container-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container-content .text-box {
+    width: 30%;
+  }
+
+  header .search-form form {
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 0 25px 0;
+  }
+
+  header .search-form form input:first-child {
+    width: 50%;
+  }
 }
