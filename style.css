@@ -96,6 +96,48 @@ header .search-form form input {
   border-radius: 20px;
   border: none;
 }
+
+.menu-content {
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.935);
+  padding: 10px;
+  width: 90%;
+  display: block;
+  left: -1000px;
+  transition: all .3s ease-in;
+}
+
+.menu-content.active {
+  left: 0;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.935);
+  padding: 10px;
+  width: 90%;
+}
+
+.menu-content .nav-mobile {
+  height: 100%;
+  display: flex;
+  gap: 22px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu-content .nav-mobile a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.close-button {
+  color: #fff;
+  position: absolute;
+  inset: 0;
+  font-size: 1.5rem;
+}
 /* ---------------- HOME ----------------- */
 .navigation a::after {
   content: "";

@@ -36,4 +36,11 @@ $(document).ready(function () {
   $("section").on("click", function () {
     $(".search-form").removeClass("active");
   });
+
+  $(".menu-mobile").on("click", function() {
+    $(".menu-content").addClass("active");
+  });
+  $(".close-button").on("click", function() {
+    $(".menu-content").removeClass("active");
+  });
 });
