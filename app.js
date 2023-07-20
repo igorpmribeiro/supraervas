@@ -5,6 +5,7 @@ $(document).ready(function () {
   $(".home-button").on("click", function () {
     $(".home-button").addClass("selected");
     $(".modeon-button").removeClass("selected");
+    $(".modeoff-button").removeClass("selected");
 
     $("#mode-on").fadeOut(1000);
     $("#mode-off").fadeOut(1000);
