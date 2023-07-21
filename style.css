@@ -245,9 +245,11 @@ section#mode-on {
   display: none;
 }
 section#mode-on {
-  background-color: green;
+  background-color: #005B0C;
   color: #fff;
   position: absolute;
+  background-image: url("./img/Raio.png");
+  background-position: center;
 }
 section#mode-on .text-box {
   display: flex;
@@ -261,7 +263,7 @@ section#mode-on .text-box .main-info ul li {
 section#mode-on .text-box .button-buy button#comprar {
   width: 200px;
   padding: 12px 0;
-  background-color: orange;
+  background-color: #D17700;
   border: none;
   border-radius: 20px;
   font-size: 1.5rem;
@@ -277,7 +279,7 @@ section#mode-off {
   display: none;
 }
 section#mode-off {
-  background-color: orange;
+  background-color: #D16400;
   color: #fff;
   position: absolute;
 }
@@ -293,7 +295,7 @@ section#mode-off .text-box .main-info ul li {
 section#mode-off .text-box .button-buy button#comprar {
   width: 200px;
   padding: 12px 0;
-  background-color: limegreen;
+  background-color: #005B0C;
   border: none;
   border-radius: 20px;
   font-size: 1.5rem;
@@ -338,7 +340,7 @@ section#mode-off .text-box .button-buy button#comprar a {
   /* SECTION */
   section {
     width: 100%;
-    max-height: 1200px;
+    height: 100vh;
   }
   .container-menu {
     display: flex;
@@ -351,7 +353,7 @@ section#mode-off .text-box .button-buy button#comprar a {
     align-items: center;
   }
   .container-content .text-box {
-    width: 30%;
+    width: 45%;
   }
   .navigation {
     width: 50%;
