@@ -43,8 +43,9 @@ section .right-column img {
 .title {
   margin: 0 auto;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: #fff;
+  padding: 5px;
 }
 ul.lista li {
   margin: 10px 0 10px 30px;
@@ -55,6 +56,10 @@ ul.lista li {
 }
 ul.lista h5 {
   color: #fff;
+}
+h5 {
+  color: #fff;
+  font-size: 1.2rem;
 }
 /* -------------- MAIN ---------------- */
 .main {
@@ -227,7 +232,7 @@ ul.lista h5 {
   ul.lista li {
     font-size: 2.2rem;
   }
-  ul.lista h5 {
+  h5 {
     font-size: 1.5rem;
   }
   .gallery .button button {
@@ -242,5 +247,13 @@ ul.lista h5 {
   }
   section.gallery {
     margin: 65px 0;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .logo {
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
   }
 }
