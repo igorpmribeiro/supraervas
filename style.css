@@ -192,6 +192,7 @@ h5 {
 .footer .main-container .social-media {
   display: flex;
   gap: 25px;
+  justify-content: center;
 }
 
 .footer .main-container .social-media i {
