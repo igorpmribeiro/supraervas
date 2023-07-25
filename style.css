@@ -182,6 +182,23 @@ h5 {
   background-color: rgb(89, 24, 89);
 }
 
+/* -------------- FOOTER ---------------- */
+.footer .main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer .main-container .social-media {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.footer .main-container .social-media i {
+  font-size: 2.2rem;
+  color: #fff;
+}
 /* -------------- MEDIA ---------------- */
 
 @media (min-width: 760px) {
