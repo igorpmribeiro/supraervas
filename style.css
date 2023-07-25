@@ -24,9 +24,10 @@ section {
 }
 .main-container {
   max-width: 85%;
+  position: relative;
 }
 section .right-column img {
-  max-width: 400px;
+  max-width: 365px;
 }
 
 .right-column {
@@ -46,6 +47,7 @@ section .right-column img {
   font-size: 1.3rem;
   color: #fff;
   padding: 5px;
+  z-index: 3;
 }
 ul.lista li {
   margin: 10px 0 10px 30px;
@@ -62,8 +64,25 @@ h5 {
   font-size: 1.2rem;
 }
 /* -------------- MAIN ---------------- */
-.main {
-  background-color: blueviolet;
+.main,
+.modo-on,
+.modo-off {
+  position: relative;
+  border-bottom: 5px solid rgb(115, 17, 115);
+}
+.main::before,
+.modo-on::before,
+.modo-off::before {
+  content: '';
+  background-image: url('./img/foto-fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  inset: 0;
+  opacity: .5;
+}
+.logo {
+  z-index: 3;
 }
 .main .logo img {
   max-width: 200px;
@@ -125,6 +144,9 @@ h5 {
 .gallery .main-container .images {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 .gallery .main-container .images img {
   max-width: 300px;
@@ -150,7 +172,7 @@ h5 {
 }
 .gallery .button button a {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #fff;
 }
 
@@ -196,7 +218,6 @@ h5 {
   section.main {
     gap: 0;
   }
-
   section.modo-on .main-container .right-column,
   section.modo-off .main-container .right-column {
     align-items: center;
@@ -222,6 +243,13 @@ h5 {
   .gallery .main-container {
     flex-direction: column;
   }
+  .gallery .main-container .images {
+    gap: 30px;
+  }
+  .gallery .main-container .images img {
+    width: auto;
+    height: 400px;
+  }
   .main-container .left-column .light {
     font-size: 1.8rem;
     font-weight: 300;
@@ -237,6 +265,7 @@ h5 {
   }
   .gallery .button button {
     width: 50%;
+    color: #fff;
   }
   .main-container .left-column button {
     padding: 15px;
