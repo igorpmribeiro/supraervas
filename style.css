@@ -1,3 +1,7 @@
+/* -------------- GERAL ---------------- */
+:root {
+  font-size: 16px;
+}
 * {
   padding: 0;
   margin: 0;
@@ -7,380 +11,236 @@
   list-style: none;
   font-family: "Roboto", sans-serif;
 }
-
 body {
-  position: relative;
-}
-.title h2 {
-  font-size: 1.1rem;
-  font-weight: 100;
-}
-
-.main-info {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.sub-info {
-  font-size: 1.1rem;
-  font-weight: 100;
-}
-
-section .img-box img {
-  max-width: 360px;
-}
-/* ---------------- HEADER ----------------- */
-
-header {
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10px 20px 0;
-  border-bottom: 3px solid #555;
-  position: relative;
-}
-
-header a {
-  color: #fff;
-  cursor: pointer;
-}
-.menu-mobile .menu-button li {
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  margin: 5px 0;
-}
-.left {
-  display: flex;
-  gap: 10px;
-  padding: 0 10px;
-  align-items: center;
-}
-.left .nav-left {
-  display: none;
-}
-
-.left .logo {
-  display: flex;
-  align-items: center;
-}
-.left .logo img {
-  max-width: 150px;
-}
-.right .nav-right {
-  display: flex;
-  align-items: center;
-}
-.right .nav-right a {
-  margin: 0 10px;
-}
-.right .nav-right a:last-child {
-  color: #000;
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 5px;
-  width: 100px;
-  text-align: center;
-}
-.right .nav-right a:last-child i {
-  padding: 0 5px;
-}
-
-header .search-form {
-  position: absolute;
-  top: -50px;
-  opacity: 0; /* height of header + search bar*/
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  background-color: #000;
-  transition: opacity 0.3s ease-in-out;
-}
-
-header .search-form.active {
-  top: 85px;
-  opacity: 1;
-  border-bottom: 3px solid rgba(245, 245, 245, 0.5);
-  transition: opacity 0.3s ease-in-out;
-}
-
-header .search-form form {
-  display: flex;
-  gap: 22px;
-}
-header .search-form form input {
-  padding: 10px 12px;
-  border-radius: 20px;
-  border: none;
-}
-
-.menu-content {
-  height: 100vh;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.935);
-  padding: 10px;
-  width: 90%;
-  display: block;
-  left: -1000px;
-  transition: all .3s ease-in;
-}
-
-.menu-content.active {
-  left: 0;
-  height: 100vh;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.935);
-  padding: 10px;
-  width: 90%;
-}
-
-.menu-content .nav-mobile {
-  height: 100%;
-  display: flex;
-  gap: 22px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.menu-content .nav-mobile a {
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-.close-button {
-  color: #fff;
-  position: absolute;
-  inset: 0;
-  font-size: 1.5rem;
-}
-/* ---------------- HOME ----------------- */
-.navigation a::after {
-  content: "";
-  height: 0;
-  position: absolute;
-  display: block;
-  background-color: #fff;
-  width: 0;
-  margin-top: 3px;
-  transition: all 0.5s ease-in;
-}
-
-.navigation a.selected::after {
-  height: 3px;
-  width: 100%;
-  transition: all 0.5s ease-in;
+  background-color: blueviolet;
 }
 section {
-  padding: 0 25px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 0 15px 0;
+}
+.main-container {
+  max-width: 85%;
+}
+section .right-column img {
+  max-width: 400px;
 }
 
-.container-content {
+.right-column {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
 }
 
-section#home {
-  display: none;
-}
+/* -------------- BODY ---------------- */
 
-section#home {
-  background-color: #000;
+.title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
   color: #fff;
-  position: absolute;
 }
-
-.navigation {
-  display: flex;
-  gap: 20px;
-  padding: 25px 0;
-  background-color: transparent;
-  height: max-content;
-  transition: background 0.8s;
-}
-
-.navigation a {
+ul.lista li {
+  margin: 10px 0 10px 30px;
+  list-style-type: disc;
   color: #fff;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 1rem;
   font-weight: 700;
-  position: relative;
+  font-size: 1.5rem;
 }
-
-section#home .text-box {
-  height: 50vh;
+ul.lista h5 {
+  color: #fff;
+}
+/* -------------- MAIN ---------------- */
+.main {
+  background-color: blueviolet;
+}
+.main .logo img {
+  max-width: 200px;
+}
+.main-container .left-column {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 }
-
-section#home .text-box .button-buy button#comprar {
-  width: 200px;
-  padding: 12px 0;
+.main-container .left-column .bold {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.main-container .left-column .light {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-container .left-column button {
+  width: 100%;
+  padding: 10px;
   background-color: limegreen;
   border: none;
+  cursor: pointer;
   border-radius: 20px;
-  font-size: 1.5rem;
 }
-
-section#home .text-box .button-buy button#comprar a {
-  color: #fff;
+.main-container .left-column button a {
   text-transform: uppercase;
-}
-/* ---------------- MODO ON ----------------- */
-
-section#mode-on {
-  display: none;
-}
-section#mode-on {
-  background-color: #005B0C;
+  font-size: 1.6rem;
   color: #fff;
-  position: absolute;
-  background-image: url("./img/Raio.png");
-  background-position: center;
 }
-section#mode-on .text-box {
+
+/* -------------- MODO ON ---------------- */
+
+.modo-on {
+  background-color: rgb(89, 24, 89);
+}
+/* .modo-on .right-column {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+} */
+
+.modo-on .right-column .imagem-primaria {
+  padding: 5px;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px 10px #00ff00,
+              inset 0 0 5px 3px #00ff00;*/
+}
+
+/* -------------- GALERIA ---------------- */
+.gallery {
+  background-color: blueviolet;
+}
+.gallery .main-container .images {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
-section#mode-on .text-box .main-info ul li {
-  list-style: disc;
-  margin-left: 25px;
+.gallery .main-container .images img {
+  max-width: 300px;
 }
-section#mode-on .text-box .button-buy button#comprar {
-  width: 200px;
-  padding: 12px 0;
-  background-color: #D17700;
-  border: none;
-  border-radius: 20px;
-  font-size: 1.5rem;
+.gallery .subtitle {
+  margin: 15px 0;
 }
-section#mode-on .text-box .button-buy button#comprar a {
+.gallery .subtitle h5 {
   color: #fff;
-  text-transform: uppercase;
 }
-
-/* ---------------- MODO OFF ----------------- */
-
-section#mode-off {
-  display: none;
-}
-section#mode-off {
-  background-color: #D16400;
-  color: #fff;
-  position: absolute;
-}
-section#mode-off .text-box {
+.gallery .button {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  justify-content: center;
 }
-section#mode-off .text-box .main-info ul li {
-  list-style: disc;
-  margin-left: 25px;
-}
-section#mode-off .text-box .button-buy button#comprar {
-  width: 200px;
-  padding: 12px 0;
-  background-color: #005B0C;
+.gallery .button button {
+  width: 80%;
+  padding: 15px;
+  background-color: limegreen;
   border: none;
+  cursor: pointer;
   border-radius: 20px;
-  font-size: 1.5rem;
 }
-section#mode-off .text-box .button-buy button#comprar a {
-  color: #fff;
+.gallery .button button a {
   text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #fff;
 }
-/* ---------------- MEDIA ----------------- */
 
-@media (min-width: 1000px) {
-  header {
-    width: 100%;
-    padding: 10px 30px 10px 0;
-  }
-  .menu-button {
-    display: none;
-  }
-  .left {
-    display: flex;
-    gap: 50px;
-  }
-  .left .nav-left {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-  }
-  .left .nav-left a {
-    color: #fff;
-  }
-  header .search-form form {
-    justify-content: center;
-    width: 75%;
-    margin: 0 auto;
-    padding: 10px 0 25px 0;
+/* -------------- MODO OFF ---------------- */
+
+.modo-off {
+  background-color: rgb(89, 24, 89);
+}
+
+/* -------------- MEDIA ---------------- */
+
+@media (min-width: 760px) {
+  section .right-column img {
+    max-width: 550px;
   }
 
-  header .search-form form input:first-child {
-    width: 50%;
+  .gallery .main-container .images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px 0;
   }
+}
 
-  /* SECTION */
-  section {
-    width: 100%;
-    height: 100vh;
+@media (min-width: 1400px) {
+  .main-container {
+    max-width: 80%;
+    margin: 30px;
   }
-  .container-menu {
-    display: flex;
-    justify-content: center;
+  section .right-column img {
+    max-width: 500px;
   }
-  .container-content {
+  section .main-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
   }
-  .container-content .text-box {
-    width: 45%;
-  }
-  .navigation {
+  section .main-container .left-column {
     width: 50%;
-    justify-content: space-evenly;
   }
-  .navigation a {
-    font-size: 1.3rem;
+  section .main-container .right-column {
+    width: 50%;
   }
-  .main-info span {
-    margin-bottom: 5px;
-    }
-  .main-info ul li {
-    margin: 8px;
+  section.main {
+    gap: 0;
   }
-  .menu-content {
-    display: none;
+
+  section.modo-on .main-container .right-column,
+  section.modo-off .main-container .right-column {
+    align-items: center;
   }
-  .title h2 {
-    font-size: 1.6rem;
+  .modo-on .main-container {
+    flex-direction: row-reverse;
+    justify-content: space-around;
   }
-  .main-info {
-    font-size: 2.6rem;
+  .modo-on .right-column .imagem-secundaria img {
+    max-width: 220px;
   }
-  .sub-info {
-    font-size: 1.6rem;
+  h5 {
+    font-size: 1.2rem;
+    color: #fff;
   }
-  section .img-box img {
-    max-width: 500px;
+  .modo-off .main-container {
+    flex-direction: row-reverse;
+  }
+  .modo-off ul.lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery .main-container {
+    flex-direction: column;
+  }
+  .main-container .left-column .light {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .main-container .left-column .bold {
+    font-size: 2.4rem;
+  }
+  ul.lista li {
+    font-size: 2.2rem;
+  }
+  ul.lista h5 {
+    font-size: 1.5rem;
+  }
+  .gallery .button button {
+    width: 50%;
+  }
+  .main-container .left-column button {
+    padding: 15px;
+  }
+  .gallery .button button a,
+  .main-container .left-column button a {
+    font-size: 1.8rem;
+  }
+  section.gallery {
+    margin: 65px 0;
   }
 }
